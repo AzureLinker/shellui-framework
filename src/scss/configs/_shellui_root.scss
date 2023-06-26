@@ -1,0 +1,7 @@
+:root,
+[data-sui-theme="light"] {
+    @each $color,
+    $value in $main-colors {
+        --#{$prefix}#{$color}: #{$value};
+    }
+}
