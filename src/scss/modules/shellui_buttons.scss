@@ -1,0 +1,63 @@
+@mixin btn() {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: $basic-pad $basic-pad * 2;
+}
+
+@mixin btn-sm() {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: $basic-pad * 0.5 $basic-pad;
+}
+
+@each $color,
+$value in $main-colors {
+    .btn-#{$color} {
+        @include btn();
+        border: 0;
+        background-color: #{$value};
+        color: var(--sui-#{$color}-contrast);
+        &:hover {
+            @if(#{$color}==dark) {
+                background-color: lighten($value, $amount: 5);
+            }
+            @else {
+                background-color: darken($value, $amount: 5);
+            }
+        }
+    }
+    .btn-outlined-#{$color} {
+        @include btn();
+        border: $basic-border-thin solid #{$value};
+        color: #{$value};
+        &:hover {
+            background-color: #{$value};
+            color: var(--sui-#{$color}-contrast);
+        }
+    }
+    .btn-sm-#{$color} {
+        @include btn-sm();
+        border: 0;
+        background-color: #{$value};
+        color: var(--sui-#{$color}-contrast);
+        &:hover {
+            @if(#{$color}==dark) {
+                background-color: lighten($value, $amount: 5);
+            }
+            @else {
+                background-color: darken($value, $amount: 5);
+            }
+        }
+    }
+    .btn-sm-outlined-#{$color} {
+        @include btn-sm();
+        border: $basic-border-thin solid #{$value};
+        color: #{$value};
+        &:hover {
+            background-color: #{$value};
+            color: var(--sui-#{$color}-contrast);
+        }
+    }
+}

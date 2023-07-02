@@ -1,0 +1,26 @@
+@each $color,
+$value in $main-colors {
+    .border-all-thin-#{$color} {
+        border: 1px solid #{$value};
+    }
+    .border-top-thin-#{$color} {
+        border-top: 1px solid #{$value};
+    }
+    .border-bottom-thin-#{$color} {
+        border-bottom: 1px solid #{$value};
+    }
+    .border-left-thin-#{$color} {
+        border-left: 1px solid #{$value};
+    }
+    .border-right-thin-#{$color} {
+        border-right: 1px solid #{$value};
+    }
+    .border-y-thin-#{$color} {
+        border-top: 1px solid #{$value};
+        border-bottom: 1px solid #{$value};
+    }
+    .border-x-thin-#{$color} {
+        border-left: 1px solid #{$value};
+        border-right: 1px solid #{$value};
+    }
+}

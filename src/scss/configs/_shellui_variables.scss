@@ -12,6 +12,7 @@ $dark: #1d1e1f;
 $hr-color-light: #b1b1b1;
 $border-color-light: #dee2e6;
 $main-colors:( "primary": $primary, "secondary": $secondary, "error": $error, "success": $success, "warning": $warning, "info": $info, "light": $light, "dark": $dark);
+$main-colors-contrast:( "primary": $light, "secondary": $dark, "error": $light, "success": $dark, "warning": $dark, "info": $light, "light": $dark, "dark": $light);
 // Basic Colors
 $white: #ffffff;
 $black: #000000;
@@ -19,3 +20,18 @@ $black: #000000;
 $prefix: sui- !default;
 //percents
 $percents: ( "100": 100%, "90": 90%, "80": 80%, "70": 70%, "60": 60%, "50": 50%, "40": 40%, "30": 30%, "20": 20%, "10": 10%);
+// pad and marg em
+$em-s: ( "em-1": 1em, "em-2": 2em, "em-3": 3em, "em-4": 4em, "em-5": 5em, "em-6": 6em, "em-7": 7em, "em-8": 8em, "em-9": 9em, "em-10": 10em);
+// spacing
+$basic-pad: 1em;
+$basic-marg: 1em;
+// borders
+$basic-border-thin: 1px;
+$basic-border-radius: 2em;
+//font sizes
+$base-font-size: 1em;
+$xs-font-size: $base-font-size * 0.5;
+$sm-font-size: $base-font-size * 0.75;
+$lg-font-size: $base-font-size * 1.5;
+$xl-font-size: $base-font-size * 2;
+$xxl-font-size: $base-font-size * 3;
