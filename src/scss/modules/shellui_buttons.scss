@@ -27,6 +27,22 @@ $value in $main-colors {
                 background-color: darken($value, $amount: 5);
             }
         }
+        @include xs {
+            font-size: $xs-font-size;
+            padding: $basic-pad * 0.2 $basic-pad * 0.5;
+        }
+        @include sm {
+            font-size: $sm-font-size;
+            padding: $basic-pad * 0, 5 $basic-pad;
+        }
+        @include md {
+            font-size: $sm-font-size;
+            padding: $basic-pad * 0.8 $basic-pad * 1.5;
+        }
+        @include lg {
+            font-size: $base-font-size;
+            padding: $basic-pad $basic-pad * 2;
+        }
     }
     .btn-outlined-#{$color} {
         @include btn();
@@ -35,6 +51,22 @@ $value in $main-colors {
         &:hover {
             background-color: #{$value};
             color: var(--sui-#{$color}-contrast);
+        }
+        @include xs {
+            font-size: $xs-font-size;
+            padding: $basic-pad * 0.2 $basic-pad * 0.5;
+        }
+        @include sm {
+            font-size: $sm-font-size;
+            padding: $basic-pad * 0, 5 $basic-pad;
+        }
+        @include md {
+            font-size: $sm-font-size;
+            padding: $basic-pad * 0.8 $basic-pad * 1.5;
+        }
+        @include lg {
+            font-size: $base-font-size;
+            padding: $basic-pad $basic-pad * 2;
         }
     }
     .btn-sm-#{$color} {
@@ -50,6 +82,22 @@ $value in $main-colors {
                 background-color: darken($value, $amount: 5);
             }
         }
+        @include xs {
+            font-size: $xs-font-size;
+            padding: $basic-pad * 0.2 $basic-pad * 0.5;
+        }
+        @include sm {
+            font-size: $sm-font-size;
+            padding: $basic-pad * 0.2 $basic-pad * 0.5;
+        }
+        @include md {
+            font-size: $sm-font-size;
+            padding: $basic-pad * 0.3 $basic-pad * 0.8;
+        }
+        @include lg {
+            font-size: $base-font-size;
+            padding: $basic-pad * 0.5 $basic-pad;
+        }
     }
     .btn-sm-outlined-#{$color} {
         @include btn-sm();
@@ -58,6 +106,22 @@ $value in $main-colors {
         &:hover {
             background-color: #{$value};
             color: var(--sui-#{$color}-contrast);
+        }
+        @include xs {
+            font-size: $xs-font-size;
+            padding: $basic-pad * 0.2 $basic-pad * 0.5;
+        }
+        @include sm {
+            font-size: $sm-font-size;
+            padding: $basic-pad * 0.2 $basic-pad * 0.5;
+        }
+        @include md {
+            font-size: $sm-font-size;
+            padding: $basic-pad * 0.3 $basic-pad * 0.8;
+        }
+        @include lg {
+            font-size: $base-font-size;
+            padding: $basic-pad * 0.5 $basic-pad;
         }
     }
 }
